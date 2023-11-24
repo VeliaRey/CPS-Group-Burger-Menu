@@ -37,6 +37,7 @@ html {
   -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 	font-family: "TT Lakes";
 	color: rgba(27, 28, 33, 1);
+	height: 100%;
 }
 
 .burger__top {
@@ -54,10 +55,9 @@ button, a {
 	color: rgba(27, 28, 33, 1);
 }
 
-button:hover {
+.round-button--hover:hover {
 	opacity: 0.5;
-	transition-property: opacity;
-	transition-duration: 0.5s;
+	transition: opacity 0.5s;
 }
 
 .burger__top button {
@@ -65,11 +65,11 @@ button:hover {
 	height: 40px;
 }
 
-.top__close-button {
+.round-button__close {
 	background-image: url("images/close.svg");	
 }
 
-.top__search-button {
+.round-button__search {
 	background-image: url("images/search.svg");
 	margin-left: auto;		
 }
@@ -113,24 +113,24 @@ button:hover {
 	padding: 0 24px 32px 24px;
 }
 
-.bottom__buttons button {
+.round-button button {
 	width: 40px;
 	height: 40px;
 }
 
-.buttons__chatcopy {
+.round-button__chatcopy {
 	background-image: url("images/chatCopy.svg");
 }
 
-.buttons__chat {
+.round-button__chat {
 	background-image: url("images/chat.svg");	
 }
 
-.buttons__profile {
+.round-button__profile {
 	background-image: url("images/profile.svg");	
 }
 
-.bottom__buttons {
+.round-button {
 	display: flex;
 	gap: 16px;
 }
