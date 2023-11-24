@@ -1,0 +1,167 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+@font-face {
+	font-family: "TT Lakes";
+	src: url("fonts/TTLakes-Regular.woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TT Lakes";
+	src: url("fonts/TTLakes-Medium.woff");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TT Lakes";
+	src: url("fonts/TTLakes-Bold.woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+.burger {
+	width: 320px;
+	box-shadow: 
+	16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+  -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+	font-family: "TT Lakes";
+	color: rgba(27, 28, 33, 1);
+}
+
+.burger__top {
+   display: flex;
+   
+	justify-content: flex-start;
+	padding: 18px 24px 24px 24px;
+	gap: 16px;
+	align-items: center;
+}
+
+button, a {
+	background-color: transparent;	
+	cursor: pointer;
+	text-decoration: none;
+	color: rgba(27, 28, 33, 1);
+}
+
+button:hover {
+	opacity: 0.5;
+	transition-property: opacity;
+	transition-duration: 0.5s;
+}
+
+.burger__top button {
+	width: 40px;
+	height: 40px;
+}
+
+.top__close-button {
+	background-image: url("images/close.svg");	
+}
+
+.top__search-button {
+	background-image: url("images/search.svg");
+	margin-left: auto;		
+}
+
+.menu {
+	list-style: none;
+	padding-bottom: 100px;
+ }
+
+ .menu__item {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.20000000298023224px;
+	text-align: left;
+	font-weight: 500;
+ }
+
+.menu__item a {
+	display: block;	
+	padding: 22px 24px 16px 24px;	
+} 
+
+.menu__item a:hover {
+	position: relative;
+	color: rgba(126, 126, 130, 1);
+	transition-property: color;
+	transition-duration: 1s;
+}
+
+.menu__item a:hover::after {
+	content: "";
+	position: absolute;
+	background-image: url("images/highlight.svg");
+	width: 4px;
+	height: 32px;
+	left: 0px;
+	top: 16px;
+}
+
+.burger__bottom {
+	padding: 0 24px 32px 24px;
+}
+
+.bottom__buttons button {
+	width: 40px;
+	height: 40px;
+}
+
+.buttons__chatcopy {
+	background-image: url("images/chatCopy.svg");
+}
+
+.buttons__chat {
+	background-image: url("images/chat.svg");
+	
+}
+
+.buttons__profile {
+	background-image: url("images/profile.svg");
+	
+}
+
+.bottom__buttons {
+	display: flex;
+	gap: 16px;
+}
+
+.bottom__mail {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.20000000298023224px;
+	text-align: left;
+	margin-top: 16px;
+	margin-bottom: 12px;
+}
+
+.bottom__phone {
+	font-weight: 700;	
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: -0.6000000238418579px;
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+.bottom__lang {
+	display: flex;
+	gap: 7px;
+}
+
+.current {
+	color: rgba(126, 126, 130, 1);
+}
