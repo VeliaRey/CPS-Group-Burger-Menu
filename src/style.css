@@ -40,8 +40,7 @@ html {
 }
 
 .burger__top {
-   display: flex;
-   
+   display: flex;   
 	justify-content: flex-start;
 	padding: 18px 24px 24px 24px;
 	gap: 16px;
@@ -124,13 +123,11 @@ button:hover {
 }
 
 .buttons__chat {
-	background-image: url("images/chat.svg");
-	
+	background-image: url("images/chat.svg");	
 }
 
 .buttons__profile {
-	background-image: url("images/profile.svg");
-	
+	background-image: url("images/profile.svg");	
 }
 
 .bottom__buttons {
