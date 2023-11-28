@@ -9,48 +9,62 @@
 	
 <body>
 	<aside class="burger">
-		<header class="burger__top ">	
-				
-			<button class="round-button__close round-button--hover"></button>				 
-
-			<a class="round-button__group round-button--hover" href="#">						
-				<img src="src/images/Group.svg" alt="header__group"> 
-			</a>		
-
-			<button class="round-button__search round-button--hover"></button>
-		
+		<header class="burger-header ">	
+			<div class="burger-header__buttons">	
+				<button class="round-button__close round-button"></button>		
+				<a class="round-button__group" href="#">						
+					<img src="src/images/Group.svg" alt="header__group"> 
+				</a>		
+				<button class="round-button__search round-button"></button>
+			</div>
 		</header>
 
 		<nav>
-			<ul class="burger__menu menu">
-				<li class="menu__item"><a href="#">Ремонт техники</a></li>
-				<li class="menu__item"><a href="#">Услуги и сервисы	</a></li>
-				<li class="menu__item"><a href="#">Корпоративным клиентам</a></li>
-				<li class="menu__item"><a href="#">Продавцам техники</a></li>
-				<li class="menu__item"><a href="#">Партнерам</a></li>
-				<li class="menu__item"><a href="#">Производителям</a></li>
-				<li class="menu__item"><a href="#">Наши сервисные центры</a></li>
-				<li class="menu__item"><a href="#">Контакты</a></li>
+			<ul class="burger-menu">
+				<li class="burger-menu__item">
+					<a class="burger-menu__link" href="#">Ремонт техники</a>
+				</li>
+				<li class="burger-menu__item">
+					<a class="burger-menu__link" href="#">Услуги и сервисы</a>
+				</li>
+				<li class="burger-menu__item">
+					<a class="burger-menu__link" href="#">Корпоративным клиентам</a>
+				</li>
+				<li class="burger-menu__item">
+					<a class="burger-menu__link" href="#">Продавцам техники</a>
+				</li>
+				<li class="burger-menu__item">
+					<a class="burger-menu__link" href="#">Партнерам</a>
+				</li>
+				<li class="burger-menu__item">
+					<a class="burger-menu__link" href="#">Производителям</a>
+				</li>
+				<li class="burger-menu__item">
+					<a class="burger-menu__link" href="#">Наши сервисные центры</a>
+				</li>
+				<li class="burger-menu__item">
+					<a class="burger-menu__link" href="#">Контакты</a>
+				</li>
 			</ul>
 		</nav>
 
-		<footer class="burger__bottom bottom"> 
+		<footer class="burger-footer"> 
 
-			<div class="round-button"> 				
-				<button class="round-button__chatcopy round-button--hover"></button>  
+			<div class="burger-footer__buttons"> 				
+				<button class="round-button__chatcopy round-button"></button>  
 
-				<button class="round-button__chat round-button--hover"></button>		
+				<button class="round-button__chat round-button"></button>		
 
-				<button class="round-button__profile round-button--hover"></button>	
+				<button class="round-button__profile round-button"></button>	
 			</div>
 
-			<div class="bottom__mail"><a  href="mailto: #mail@cps.com">mail@cps.com</a></div>
-			<div class="bottom__phone"><a href="tel: 8 800 890 8900">8 800 890 8900</a></div>
+			<div class="burger-footer__mail"><a  href="mailto: #mail@cps.com">mail@cps.com</a></div>
+			<div class="burger-footer__phone"><a href="tel: 8 800 890 8900">8 800 890 8900</a></div>
 
-			<div class="bottom__lang lang"> 
-				<a class="lang__ru current" href="#">RU</a>
-				<a class="lang__en" href="#">EN</a>
-				<a class="lang__ch" href="#">CH</a>
+			<div class="burger-footer__langs-block"> 
+				<a class="langs-block__link langs-block__link--current" href="#">RU</a>
+				<a class="langs-block__link" href="#">EN</a>
+				<a class="langs-block__link" href="#">CH</a>
 			</div>
 		</footer>
 	</aside>

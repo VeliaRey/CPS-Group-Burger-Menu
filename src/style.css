@@ -37,10 +37,10 @@ html {
   -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 	font-family: "TT Lakes";
 	color: rgba(27, 28, 33, 1);
-	height: 100%;
+	min-height: 100vh;
 }
 
-.burger__top {
+.burger-header__buttons {
    display: flex;   
 	justify-content: flex-start;
 	padding: 18px 24px 24px 24px;
@@ -55,14 +55,9 @@ button, a {
 	color: rgba(27, 28, 33, 1);
 }
 
-.round-button--hover:hover {
+.round-button:hover {
 	opacity: 0.5;
 	transition: opacity 0.5s;
-}
-
-.burger__top button {
-	width: 40px;
-	height: 40px;
 }
 
 .round-button__close {
@@ -74,12 +69,12 @@ button, a {
 	margin-left: auto;		
 }
 
-.menu {
+.burger-menu {
 	list-style: none;
 	padding-bottom: 100px;
  }
 
- .menu__item {
+ .burger-menu__item {
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: -0.20000000298023224px;
@@ -87,19 +82,19 @@ button, a {
 	font-weight: 500;
  }
 
-.menu__item a {
+.burger-menu__link {
 	display: block;	
 	padding: 22px 24px 16px 24px;	
 } 
 
-.menu__item a:hover {
+.burger-menu__link:hover {
 	position: relative;
 	color: rgba(126, 126, 130, 1);
 	transition-property: color;
 	transition-duration: 1s;
 }
 
-.menu__item a:hover::after {
+.burger-menu__link:hover::after {
 	content: "";
 	position: absolute;
 	background-image: url("images/highlight.svg");
@@ -109,13 +104,13 @@ button, a {
 	top: 16px;
 }
 
-.burger__bottom {
-	padding: 0 24px 32px 24px;
-}
-
-.round-button button {
+.round-button {
 	width: 40px;
 	height: 40px;
+}
+
+.burger-footer {
+	padding: 0 24px 32px 24px;
 }
 
 .round-button__chatcopy {
@@ -130,12 +125,12 @@ button, a {
 	background-image: url("images/profile.svg");	
 }
 
-.round-button {
+.burger-footer__buttons {
 	display: flex;
 	gap: 16px;
 }
 
-.bottom__mail {
+.burger-footer__mail {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 24px;
@@ -145,7 +140,7 @@ button, a {
 	margin-bottom: 12px;
 }
 
-.bottom__phone {
+.burger-footer__phone {
 	font-weight: 700;	
 	font-size: 24px;
 	line-height: 32px;
@@ -154,11 +149,11 @@ button, a {
 	margin-bottom: 40px;
 }
 
-.bottom__lang {
+.burger-footer__langs-block{
 	display: flex;
 	gap: 7px;
 }
 
-.current {
+.langs-block__link--current {
 	color: rgba(126, 126, 130, 1);
 }
